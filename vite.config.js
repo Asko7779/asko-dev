@@ -6,7 +6,8 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      input: '/index.html', // Ensure this is correct if you have a custom setup
+      input: '/src/index.html',
+      external: ['react', 'react-dom'] // Ensure this is correct if you have a custom setup
     },
     },
 });
